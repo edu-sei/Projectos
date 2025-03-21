@@ -17,7 +17,7 @@ body{
 main {
    height: 100%;
    width: 60%;
-   background-color: rgb(95, 0, 0);
+
 }
 
 aside {
@@ -41,7 +41,7 @@ img {
     place-items: center;
 
     .foto{
-        border: solid 10px white;
+        /* border: solid 10px white; */
         height: 100px;
         width: 100px;
         border-radius: 50%;
@@ -62,7 +62,7 @@ img {
         display: flex;
         flex-direction: column;
         gap: 1em;
-
+        
         li{
             list-style: none;
         }
@@ -76,10 +76,41 @@ img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
+    li{
+        list-style: none;
+    }
+
 }
 .educacion{
-    height: 300px;
+    height: 430px;
     width: 100%;
     background-color: chocolate;
     padding: 2em;
+}
+.contenedorFlexbox{
+    display: flex;
+    background-color:rgb(131, 131, 131);
+    overflow-x: auto;
+    
+}
+.tarjeta{
+    flex: 0 0 100px;
+    flex-basis: 100%;
+    background-color: indigo;
+    color: white;
+    border-radius: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.tarjetaTitulo{
+    font-size: 1em;
+    font-weight: bold;
+
+}
+.tarjetaContenido{
+    font-size: 1em;
+    background-color: white;
+    color: black;
+    padding: 1em;
+    border-radius: 1em;
+    
 }
