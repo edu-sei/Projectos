@@ -2,91 +2,126 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /*para que el padding y el border no se sumen al width*/
     text-decoration: none;
 }
 
 body{
     font-family: Arial, sans-serif;
     background-color: #a779e4;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    
 }
 main {
-   height: 100%;
-   width: 60%;
-
+    width: 70%;
+    background-color: white;
 }
 
 aside {
+    background-color: #a12424;
+    color: white;
+    width: 30%;
     height: 100%;
-    width: 40%;
-   
 
 }
+
 
 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    /*para que la imagen no se deforme*/
+
 }
 
-.perfil{
+.perfil {
     padding: 1em;
     width: 100%;
-    background-color: rgb(19, 255, 255);
     display: grid;
+    /*para centrar el texto e imagen*/
     place-items: center;
+    /*centrar el texto*/
 
-    .foto{
-        /* border: solid 10px white; */
+    /*centrar el texto*/
+    .foto {
+        border: double 10px rgb(126, 106, 106);
+        box-shadow: 10px 10px 20px 0px rgba(73, 158, 161, 0.706), -50px 0px 20px 0px rgb(235, 232, 32), 50px 0px 80px 0px rgba(213, 113, 41, 0.7);
         height: 100px;
         width: 100px;
         border-radius: 50%;
         overflow: hidden;
+        /*para que la imagen no se salga del circulo*/
     }
 
-    .datos{
+    .datos {
         text-align: center;
-
     }
 }
 
-.datosPersonales{
+.datosPersonales {
     width: 100%;
-    background-color: rgb(0, 255, 170);
+    background-color: aqua;
     padding: 2em;
-    ul.listaDP{
-        display: flex;
+    color: black;
+
+    .listaDP {
+        margin-top: 1em;
         flex-direction: column;
         gap: 1em;
-        
-        li{
+
+        li {
             list-style: none;
         }
     }
 }
-.redes{
-    height: 100px;
+.redes {
     width: 100%;
-    background-color: blue;
+    background-color: pink;
     padding: 2em;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
-    li{
-        list-style: none;
-    }
-
 }
-.educacion{
-    height: 430px;
+
+.educacion {
     width: 100%;
-    background-color: chocolate;
     padding: 2em;
 }
+
+/* --------colores---------- */
+
+.bg-azul {
+    background-color: #24a1a1;
+}
+.bg-blanco{
+    background-color: white;
+}
+.bg-black{
+    background-color: black;
+}
+
+.txt-white{
+    color: white;
+}
+.txt-yellow{
+    color: yellow;
+}
+
+/* ----------ordenamiento de elementos-------- */
+
+.d-flex{
+    display: flex;
+}
+.columna{
+    flex-direction: column;
+}
+.fila{
+    flex-direction: row;
+}
+.centrado{  
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 .contenedorFlexbox{
     display: flex;
     background-color:rgb(131, 131, 131);
@@ -94,23 +129,26 @@ img {
     
 }
 .tarjeta{
-    flex: 0 0 100px;
-    flex-basis: 100%;
+    height:399px;
+    flex-grow: 1; /*para que  se expanda*/
+    flex-shrink: 1; /*para que no se encoja*/
+    flex-basis: auto;
+    flex: 0 0 100px; /*para que no se expanda ni se encoja*/
     background-color: indigo;
-    color: white;
-    border-radius: 1em;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color:white;
+    border-radius: 1em; /*para redondear las esquinas*/
+    padding: 1em; /*para que el texto no se pegue a los bordes*/
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5); /*sombra*/
 }
-.tarjetaTitulo{
-    font-size: 1em;
-    font-weight: bold;
 
+.tarjetaTitulo{
+    font-size: 1.5em;
+    font-weight: bold;
 }
 .tarjetaContenido{
     font-size: 1em;
     background-color: white;
-    color: black;
+    color: gray;
     padding: 1em;
     border-radius: 1em;
-    
 }
