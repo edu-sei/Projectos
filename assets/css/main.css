@@ -1,0 +1,21 @@
+/* normalizar navegador */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*para que el padding y el border no se sumen al width*/
+    text-decoration: none;
+}
+body{
+    background-color: rgb(64, 1, 122);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+main{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    li{
+        list-style: none;
+    }
+}
