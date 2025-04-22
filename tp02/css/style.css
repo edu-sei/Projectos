@@ -30,7 +30,7 @@ main{
     color: black;
     border-radius: 20px;
 
-    .logo_container{
+    .LogoContainer{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -40,7 +40,7 @@ main{
     }
     
 
-    .user_login{
+    .UserLogin{
         display: flex;
         flex-direction: column;
         text-align: center;
