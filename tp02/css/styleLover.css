@@ -1,0 +1,90 @@
+/* normalizar navegador */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*para que el padding y el border no se sumen al width*/
+    text-decoration: none;
+
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(104, 6, 117);
+    color: rgb(0, 0, 0);
+    width: 100vw;
+    
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.tarjeta{
+    width: 300px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+
+Header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    top: 0;
+
+    button{
+        all: unset;
+        cursor: pointer;
+    }
+    .ContenCosas{
+        display: flex;
+        flex-direction: row;
+    }
+    
+}
+
+navbar::-webkit-scrollbar{
+    display: none;
+}
+
+navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1em;
+    overflow-x: scroll;
+    margin-top: 60px;
+    
+    ul{        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        list-style:none;
+        gap: 2em;
+        white-space: nowrap;
+
+        li{
+            a{
+                color: black;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
