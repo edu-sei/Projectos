@@ -1,0 +1,15 @@
+/* normalizar navegador */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*para que el padding y el border no se sumen al width*/
+    text-decoration: none;
+
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(104, 6, 117);
+    color: rgb(0, 0, 0);
+    
+}
