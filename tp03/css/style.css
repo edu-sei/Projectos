@@ -1,15 +1,172 @@
-/* normalizar navegador */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /*para que el padding y el border no se sumen al width*/
-    text-decoration: none;
-
+@import url(../../assets/css/tipografias.css);
+:root {
+    --bg-primario-gradient:
+        linear-gradient(to top, rgb(184, 0, 245), rgb(255, 255, 255));
+    --bg-primario: linear-gradient(to bottom, rgb(184, 0, 245), white);
+    --bg-secundario: rgb(98, 2, 129);
+    --txt-primario: rgb(0, 0, 0);
+    --arial: 'Arial', sans-serif;
+    --sombra-chica: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    --sombra-grande: 0px 0px 20px rgba(255, 255, 255, 0.5);
 }
 
-body{
-    font-family: 'Roboto', sans-serif;
-    background-color: rgb(104, 6, 117);
-    color: rgb(0, 0, 0);
+body {
+    height: 100vh;
+    background: var(--bg-primario-gradient);
+    color: white;
+    font-family: var(--arial);
+    box-shadow: var(--sombra-chica);
+}
+
+Header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    top: 0;
+
+    button{
+        all: unset;
+        cursor: pointer;
+    }
+    .ContenCosas{
+        display: flex;
+        flex-direction: row;
+    }
+    
+}
+
+navbar::-webkit-scrollbar{
+    display: none;
+}
+
+navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1em;
+    overflow-x: scroll;
+    margin-top: 60px;
+    
+    ul{        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        list-style:none;
+        gap: 2em;
+        white-space: nowrap;
+
+        li{
+            a{
+                color: black;
+                text-decoration: none;
+            }
+        }
+    }
+}
+@media (max-width:680px){
+    .contenedor_tarjetas a:nth-child(even) .imagen {
+        order: 1;
+    }
+    
+   
+}
+main{
+        .Home{
+            display: flex;
+            flex-direction: row;
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 1em;
+            align-items: center;
+            gap: 1em; 
+            box-shadow: 3px 3px 7px black;
+            transition: transform 0.3s ease;
+
+
+            .img{
+                width: 120px;
+                height: 120px;
+                overflow: hidden;
+                border-radius: 10px;
+                flex-shrink: 0;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover; 
+                    
+                }
+             
+            }
+
+            .datos_produto{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+                gap: 1em;
+
+                .nombres, .datos_numeros{
+                    background-color: rgb(255, 255, 255);
+                    
+                }
+
+                .nombres{
+                    width: 100%;
+                    text-align: start;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+                    gap: 8px;
+                    .titulo{
+                        
+                        font-size: 20px;
+                        font-weight: bold;
+                        color: var(--txt-titulo-carta);
+
+                    }
+                    .subtitulo{
+                        font-size: 15px;
+                        font-weight: 400;
+                        color: var(--txt-subtitulo-carta);
+                    }
+                }
+
+                .datos_numeros{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .precio{
+                        font-size: 14px;
+                        color: var(--txt-precio);
+                    }
+                    
+
+                    .puntuacion{
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        background-color: black;
+                        color: #FFFFFF;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 12px;
+                    }
+                }
+                
+            }
+        }
     
 }
