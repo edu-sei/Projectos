@@ -93,7 +93,6 @@ main{
     overflow-x: auto;
     white-space: nowrap;
     padding: 1em;
-    margin-top: 60px;
     scroll-behavior: smooth;
     box-sizing: border-box;
     }
@@ -104,19 +103,19 @@ main{
 
     .TipoComida > div {
         display: inline-block;
-        min-width: 120px;
-        height: 100px;
-        background-color: var(--bg-primario);
-        border-radius: 10px;
-        margin-right: 1em;
-        text-align: center;
-        line-height: 100px;
-        font-weight: bold;
-        color: var(--txt-secundario);
+        min-width: 100px; 
     }
 
     .Restaurantes{
-        color: aqua;
+        width: 100%;
+
+        .TarjetaResto{
+            
+            .RestoImg{
+                width: 180px;
+                height: 163px;
+            }
+        }
     }
 
 }
