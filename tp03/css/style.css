@@ -22,6 +22,13 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    a{
+        text-decoration: none;
+    }
 
     .img{
         width: auto;
@@ -29,10 +36,6 @@ main{
         max-width: 700px;
         overflow: hidden;
         border-radius: 10px;
-        img{
-            width: 100%;
-            height: 100%;
-            }
         }
 
     button{
@@ -52,12 +55,6 @@ main{
         gap: 30px;
         background-color: var(--bg-primario);
 
-        .BaseBuscador{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-        }
         .Map{
             background-color: var(--bg-detalles-primario);
             width: 60px;
@@ -94,7 +91,6 @@ main{
     white-space: nowrap;
     padding: 1em;
     scroll-behavior: smooth;
-    box-sizing: border-box;
     }
 
     .TipoComida::-webkit-scrollbar {
@@ -106,16 +102,60 @@ main{
         min-width: 100px; 
     }
 
-    .Restaurantes{
-        width: 100%;
+    .Restaurantes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
 
-        .TarjetaResto{
+        .TarjetaResto {
+            display: flex;
+            flex-direction: row;
+            color: var(--txt-primario);
             
-            .RestoImg{
+
+            .RestoImg {
                 width: 180px;
                 height: 163px;
+                border-radius: 10px 0 0 10px;
+            }
+            .TextoResto {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                padding: 10px;
+                background-color: var(--bg-primario);
+
+                .ContainerStarDolar{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+            }
+
+            .Puntuacion {
+                position: absolute;
+                right: 10px;
+
+                width: 45px;
+                height: 43px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                background: var(--bg-detalles-primario);
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+                border-radius: 15px 0px;
+
             }
         }
     }
+    /* hasta era de inicio */
+    /* ahora comienza lo siguiente */
+
+    
 
 }
