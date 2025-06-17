@@ -1,14 +1,16 @@
 @import url(../../assets/css/tipografias.css);
+
 :root {
     --bg-primario: #ffffff;
-    --bg-secundario: rgb(53, 39, 65);
+    --bg-secundario: rgb(255, 255, 255);
     --txt-primario: rgb(110, 109, 100);
     --txt-secundario: #000000;
     --bg-detalles-primario: #00DB9E;
-    --bg-detalles-secundario: rgb(188,187,192);
+    --bg-detalles-secundario: rgb(188, 187, 192);
     --arial: 'Arial', sans-serif;
     --sombra: rgba(0, 0, 0, 0.2);
-    --sombra-grande: 0px 0px 20px rgba(255, 255, 255, 0.5);
+    --sombra-chica: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    --sombra-grande: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
 body {
@@ -18,144 +20,215 @@ body {
     font-family: var(--arial);
 }
 
-main{
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    img{
+
+    img {
         width: 100%;
         height: 100%;
     }
-    a{
+    a {
         text-decoration: none;
     }
+}
 
-    .img{
-        width: auto;
-        height: auto;
-        max-width: 700px;
-        overflow: hidden;
-        border-radius: 10px;
-        }
+.img {
+    max-width: 700px;
+    overflow: hidden;
+}
 
-    button{
-            background: transparent;
-            border: none;
-            cursor: pointer;
-    }
-    button:active{
-            background-color: var(--sombra) ;
-    }
+button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
 
-    .Buscador{
-        display: flex;
-        flex-direction: row;
-        width: auto;
-        height: 60px;
-        gap: 30px;
-        background-color: var(--bg-primario);
+button:active {
+    background-color: var(--sombra);
+}
 
-        .Map{
-            background-color: var(--bg-detalles-primario);
-            width: 60px;
-            button{
-                width: 100%;
-                height: 100%;
-            }
-        }
-        .Texto{
-            width: 155px;
+.Buscador {
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    gap: 30px;
+    background-color: var(--bg-primario);
+    box-shadow: var(--sombra-grande);
+}
 
-            input{
-                width: 100%;
-                height: 100%;
-                background: transparent;
-                border: none;
-                outline: none;
-                font-size: 18px;
-                color: var(--txt-primario);
-            }
-        }
-        .Lupa{
-            width: 60px;
-            button{
-                width: 100%;
-                height: 100%;
-            }
-        }
-    }
+.Buscador .Map,
+.Buscador .Lupa {
+    width: 60px;
+}
 
-    .TipoComida {
+.Buscador .Map button,
+.Buscador .Lupa button {
+    width: 100%;
+    height: 100%;
+}
+
+.Buscador .Map {
+    background-color: var(--bg-detalles-primario);
+}
+
+.Buscador .Texto {
+    width: 155px;
+}
+
+.Buscador .Texto input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: var(--txt-primario);
+}
+
+.TipoComida {
     width: 100%;
     overflow-x: auto;
     white-space: nowrap;
     padding: 1em;
     scroll-behavior: smooth;
-    }
+}
 
-    .TipoComida::-webkit-scrollbar {
-        display: none; /* revisar todo esto */
-    }
+.TipoComida::-webkit-scrollbar {
+    display: none;
+}
 
-    .TipoComida > div {
-        display: inline-block;
-        min-width: 100px; 
-    }
+.TipoComida > div {
+    display: inline-block;
+    min-width: 100px;
+}
 
-    .Restaurantes {
-    width: 100%;
+.Restaurantes {
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding: 10px;
+    width: 100%;
+}
 
-        .TarjetaResto {
-            display: flex;
-            flex-direction: row;
-            color: var(--txt-primario);
-            
+.TarjetaResto {
+    display: flex;
+    flex-direction: row;
+    color: var(--txt-primario);
+    box-shadow: var(--sombra-grande);
+}
 
-            .RestoImg {
-                width: 180px;
-                height: 163px;
-                border-radius: 10px 0 0 10px;
-            }
-            .TextoResto {
-                flex: 1;
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
-                padding: 10px;
-                background-color: var(--bg-primario);
+.RestoImg {
+    width: 180px;
+    height: 163px;
+    border-radius: 10px 0 0 10px;
+}
 
-                .ContainerStarDolar{
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    justify-content: space-between;
-                }
-            }
+.TextoResto {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    background-color: var(--bg-primario);
+}
 
-            .Puntuacion {
-                position: absolute;
-                right: 10px;
+.ContainerStarDolar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
 
-                width: 45px;
-                height: 43px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+.Puntuacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-detalles-primario);
+    box-shadow: var(--sombra-chica);
+    border-radius: 15px 0px;
+}
+/* tarjeta es para la puntuacion del index */
+.Tarjeta{
+    position: absolute;
+    right: 10px;
+    width: 45px;
+    height: 43px;
+}
 
-                background: var(--bg-detalles-primario);
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
-                border-radius: 15px 0px;
+.imgRestorants {
+    height: 350px;
+}
 
-            }
-        }
+.Titulo{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 15px 0px 15px;
+
+    .TextoTitulo{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: larger;
     }
-    /* hasta era de inicio */
-    /* ahora comienza lo siguiente */
 
-    
+    .ContainerPuntajeDolar{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        gap: 30px;
+        top: -50px;
+    }
+    /* puntoResto es para la puntuacion de los restaurantes */
+    .PuntoResto{
+        width: 79px;
+        height: 75px;
+        font-size: 40px;
+    }
 
 }
+
+.ContainerHoraKm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 15px 15px 15px;
+}
+
+.CajaTexto{
+    padding: 20px 15px ;
+    font-size: 20px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: var(--sombra-chica);
+
+    .contentFooter{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 18px;
+
+        a {
+            color: var(--txt-secundario);
+            height: 80px;
+            width: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    
+
+    
+    a:hover {
+        background-color: var(--sombra);
+    }
+}
+

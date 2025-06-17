@@ -5,6 +5,10 @@ body{
     background-color: rgb(64, 1, 122);
     color: white;
     font-family: 'Roboto', sans-serif;
+    a{
+        text-decoration: none;
+    }
+    
 }
 
 header{
