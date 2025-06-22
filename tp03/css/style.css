@@ -2,7 +2,7 @@
 
 :root {
     --bg-primario: #ffffff;
-    --bg-secundario: rgb(255, 255, 255);
+    --bg-secundario: rgb(46, 23, 59);
     --txt-primario: rgb(110, 109, 100);
     --txt-secundario: #000000;
     --bg-detalles-primario: #00DB9E;
@@ -232,3 +232,139 @@ footer {
     }
 }
 
+.HeaderMenu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+
+    .TituloMenu{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.ContenidoMenu{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    .CartaMenu{
+        display: flex;
+        flex-direction: row;
+        color: var(--txt-primario);
+        box-shadow: var(--sombra-chica);
+
+        .PuntoImg{
+            width: 167px;
+            height: 111px;
+            display: flex;
+            flex-direction: row;
+            position: relative;
+
+            .PrecioPlato{
+                width: 58px;
+                height: 32px;
+                font-size: 16px;
+                position: absolute;
+                right: 5px;
+                bottom: 5px;
+                border-radius: 30px 0px;
+            }
+        }
+        .NombrePlato{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding: 26px 0px 26px 10px;
+        }
+    }
+}
+
+.Plato{
+    gap: 30px;
+}
+.ImgX{
+    width: 100%;
+    position: relative;
+    .Salir{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+}
+
+.TituloPlato{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+    .TextoTitulo{
+        max-width: 280px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: larger;
+    }
+
+    .PlatoPunto{
+            width: 110px;
+            height: 67px;
+            font-size: 32px;
+            border-radius: 30px 0px;
+        }
+
+}
+
+.CajaTextoPLato{
+    padding: 20px;
+    font-size: 20px;
+}
+
+.Criticas,input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: var(--txt-primario);
+    text-align: center;
+}
+.contenedorbotones{
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    height: 108px;
+    padding: 10px;
+    gap: 5px;
+    font-size: 32px;
+
+    .ContentButton1{
+        background-color: var(--bg-detalles-primario);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        gap: 20px;
+
+        width: 133px;
+        height: 88px;
+    }
+
+    .ContentButton2{
+        background: var(--bg-detalles-primario); 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        gap: 10px;
+
+        width: 282px;
+        height: 88px;
+    }
+}
