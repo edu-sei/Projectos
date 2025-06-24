@@ -1,8 +1,8 @@
 @import url(../../assets/css/tipografias.css);
 
 :root {
-    --bg-primario: #ffffff;
-    --bg-secundario: rgb(46, 23, 59);
+    --bg-primario:rgb(255, 255, 255);
+    --bg-secundario: rgb(64, 1, 94);
     --txt-primario: rgb(110, 109, 100);
     --txt-secundario: #000000;
     --bg-detalles-primario: #00DB9E;
@@ -15,7 +15,7 @@
 
 body {
     height: 100vh;
-    background: var(--bg-secundario);
+    background: var(--bg-primario);
     color: var(--txt-primario);
     font-family: var(--arial);
 }
