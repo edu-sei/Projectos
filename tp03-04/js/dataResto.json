@@ -1,0 +1,161 @@
+[{
+  "restaurantes": [
+    {
+      "id_resto": "R001",
+      "nombre": "El Rincón del Sabor",
+      "tipo_comida": "Italiana",
+      "distancia_km": 2.5,
+      "horario": "12:00-15:00, 19:00-23:00",
+      "rating": 4,
+      "price": 2
+    },
+    {
+      "id_resto": "R002",
+      "nombre": "Sushi Lovers",
+      "tipo_comida": "Japonesa",
+      "distancia_km": 1.0,
+      "horario": "19:30-00:00",
+      "rating": 5,
+      "price": 3
+    },
+    {
+      "id_resto": "R003",
+      "nombre": "La Parrilla Gaucha",
+      "tipo_comida": "Argentina",
+      "distancia_km": 5.0,
+      "horario": "12:30-16:00, 20:00-01:00",
+      "rating": 4,
+      "price": 2
+    },
+    {
+      "id_resto": "R004",
+      "nombre": "Veggie Delight",
+      "tipo_comida": "Vegetariana",
+      "distancia_km": 3.2,
+      "horario": "11:00-22:00",
+      "rating": 3,
+      "price": 1
+    },
+    {
+      "id_resto": "R005",
+      "nombre": "Burger Haven",
+      "tipo_comida": "Americana",
+      "distancia_km": 0.8,
+      "horario": "12:00-23:00",
+      "rating": 4,
+      "price": 1
+    },
+    {
+      "id_resto": "R006",
+      "nombre": "Sabor Hindú",
+      "tipo_comida": "India",
+      "distancia_km": 4.5,
+      "horario": "19:00-23:00",
+      "rating": 5,
+      "price": 2
+    }
+  ]
+},
+{
+  "platos": [
+    {
+      "id_resto": "R001",
+      "nombrePlato": "Lasaña Boloñesa",
+      "ingredientes": ["Carne picada", "Salsa de tomate", "Pasta", "Queso"],
+      "descripcion": "Clásica lasaña casera con capas de pasta, abundante salsa boloñesa y gratinado de queso.",
+      "precioPlato": 15.50,
+      "urlImg": "https://example.com/lasana.jpg"
+    },
+    {
+      "id_resto": "R001",
+      "nombrePlato": "Pizza Margarita",
+      "ingredientes": ["Masa", "Tomate", "Mozzarella", "Albahaca"],
+      "descripcion": "Pizza tradicional con base de tomate, mozzarella fresca y hojas de albahaca.",
+      "precioPlato": 12.00,
+      "urlImg": "https://example.com/pizza_margarita.jpg"
+    },
+    {
+      "id_resto": "R002",
+      "nombrePlato": "Combinado de Sushi Premium",
+      "ingredientes": ["Salmón", "Atún", "Arroz", "Algas nori", "Aguacate"],
+      "descripcion": "Variedad de nigiri, sashimi y rolls con los pescados más frescos del día.",
+      "precioPlato": 28.00,
+      "urlImg": "img/sushi.jpg"
+    },
+    {
+      "id_resto": "R003",
+      "nombrePlato": "Bife de Chorizo",
+      "ingredientes": ["Carne de res", "Sal"],
+      "descripcion": "Jugoso corte de bife de chorizo a la parrilla, acompañado de papas fritas.",
+      "precioPlato": 22.00,
+      "urlImg": "https://example.com/bife_chorizo.jpg"
+    },
+    {
+      "id_resto": "R004",
+      "nombrePlato": "Bowl Buddha",
+      "ingredientes": ["Quinoa", "Garbanzos", "Vegetales asados", "Aderezo de tahini"],
+      "descripcion": "Bowl nutritivo y completo con base de quinoa, vegetales de estación y garbanzos.",
+      "precioPlato": 14.00,
+      "urlImg": "https://example.com/buddha_bowl.jpg"
+    },
+    {
+      "id_resto": "R005",
+      "nombrePlato": "Hamburguesa Clásica",
+      "ingredientes": ["Pan de brioche", "Carne de res", "Lechuga", "Tomate", "Cebolla", "Queso", "Salsa especial"],
+      "descripcion": "La clásica hamburguesa con todos los ingredientes frescos y nuestra salsa secreta.",
+      "precioPlato": 10.50,
+      "urlImg": "https://example.com/burger_clasica.jpg"
+    }
+  ]
+},
+
+{
+  "categorias_generales": [
+    {
+      "icono": "fa-pizza-slice",
+      "nombreCat": "Pizzas"
+    },
+    {
+      "icono": "fa-fish",
+      "nombreCat": "Sushi"
+    },
+    {
+      "icono": "fa-steak",
+      "nombreCat": "Carnes"
+    },
+    {
+      "icono": "fa-leaf",
+      "nombreCat": "Vegetariano"
+    },
+    {
+      "icono": "fa-burger",
+      "nombreCat": "Hamburguesas"
+    },
+    {
+      "icono": "fa-pepper-hot",
+      "nombreCat": "Comida Picante"
+    },
+    {
+      "icono": "fa-cocktail",
+      "nombreCat": "Bebidas"
+    },
+    {
+      "icono": "fa-ice-cream",
+      "nombreCat": "Postres"
+    },
+    {
+      "icono": "fa-utensils",
+      "nombreCat": "Gourmet"
+    },
+    {
+      "icono": "fa-cookie-bite",
+      "nombreCat": "Comida Rápida"
+    },
+    {
+      "icono": "fa-pan-food",
+      "nombreCat": "Finger Food"
+    }
+  ]
+}
+
+]

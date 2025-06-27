@@ -1,9 +1,9 @@
 @import url(../../assets/css/tipografias.css);
 
 :root {
-    --bg-primario:rgb(255, 255, 255);
+    --bg-primario: #FFFFFF;
     --bg-secundario: rgb(64, 1, 94);
-    --txt-primario: rgb(110, 109, 100);
+    --txt-primario: #6E6D72;
     --txt-secundario: #000000;
     --bg-detalles-primario: #00DB9E;
     --bg-detalles-secundario: rgb(188, 187, 192);
@@ -11,6 +11,7 @@
     --sombra: rgba(0, 0, 0, 0.2);
     --sombra-chica: 0px 4px 10px rgba(0, 0, 0, 0.5);
     --sombra-grande: 0px 0px 20px rgba(0, 0, 0, 0.5);
+
 }
 
 body {
@@ -34,7 +35,7 @@ main {
     }
 }
 
-.img {
+.Img {
     max-width: 700px;
     overflow: hidden;
 }
