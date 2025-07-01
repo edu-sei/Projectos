@@ -1,10 +1,9 @@
-@import url(../../assets/css/tipografias.css);
-
 :root {
-    --bg-primario: #FFFFFF;
+    --bg-primario: #ffffff;
     --bg-secundario: rgb(64, 1, 94);
-    --txt-primario: #6E6D72;
+    --txt-primario: #7c7c7c;
     --txt-secundario: #000000;
+    --txt-terciario: #ffffff;
     --bg-detalles-primario: #00DB9E;
     --bg-detalles-secundario: rgb(188, 187, 192);
     --arial: 'Arial', sans-serif;
@@ -14,11 +13,87 @@
 
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--arial);
+}
+
 body {
-    height: 100vh;
+    min-height: 100vh;
+    width: 100%;
     background: var(--bg-primario);
     color: var(--txt-primario);
-    font-family: var(--arial);
+}
+
+button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: var(--sombra);
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+header img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+header .Buscador {
+    position: absolute;
+    bottom: -1.5em;
+    width: 80%;
+    height: 3.5em;
+    margin: 0 10%;
+    border-radius: 6px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--bg-primario);
+    box-shadow: var(--sombra-grande);
+}
+
+.Buscador .IconoBuscador {
+    width: 3.8em;
+    border-radius: 6px;
+}
+
+.Buscador .IconoBuscador button {
+    width: 100%;
+    height: 100%;
+}
+
+.Buscador .Texto input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.2em;
+    color: var(--txt-primario);
+}
+
+header .TextInicio{
+    position: absolute;
+    bottom: 3.5em;
+    left: 1px;
+    margin: 0 10%;
+    color: var(--txt-terciario);
+}
+
+.bg-Detalles-Primary{
+    background-color: var(--bg-detalles-primario);
 }
 
 main {
@@ -35,74 +110,24 @@ main {
     }
 }
 
-.Img {
-    max-width: 700px;
-    overflow: hidden;
-}
-
-button {
-    background: transparent;
-    border: none;
-    cursor: pointer;
-}
-
-button:active {
-    background-color: var(--sombra);
-}
-
-.Buscador {
-    display: flex;
-    flex-direction: row;
-    height: 60px;
-    gap: 30px;
-    background-color: var(--bg-primario);
-    box-shadow: var(--sombra-grande);
-}
-
-.Buscador .Map,
-.Buscador .Lupa {
-    width: 60px;
-}
-
-.Buscador .Map button,
-.Buscador .Lupa button {
-    width: 100%;
-    height: 100%;
-}
-
-.Buscador .Map {
-    background-color: var(--bg-detalles-primario);
-}
-
-.Buscador .Texto {
-    width: 155px;
-}
-
-.Buscador .Texto input {
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    border: none;
-    outline: none;
-    font-size: 18px;
-    color: var(--txt-primario);
-}
-
 .TipoComida {
     width: 100%;
-    overflow-x: auto;
-    white-space: nowrap;
+    padding: 2em 1em 0.4em 1em;
+    display: flex;
+    gap: 1em;
+    overflow: auto hidden;
+    scrollbar-width: none;
+}
+
+.TipoComida .IconoComida {
+    height: 100px;
+    flex: 0 0 100px;
+}
+
+.TextOffer{
+    display: flex;
     padding: 1em;
-    scroll-behavior: smooth;
-}
-
-.TipoComida::-webkit-scrollbar {
-    display: none;
-}
-
-.TipoComida > div {
-    display: inline-block;
-    min-width: 100px;
+    width: 100%;
 }
 
 .Restaurantes {
@@ -116,6 +141,7 @@ button:active {
 .TarjetaResto {
     display: flex;
     flex-direction: row;
+    position: relative;
     color: var(--txt-primario);
     box-shadow: var(--sombra-grande);
 }
@@ -153,11 +179,38 @@ button:active {
 /* tarjeta es para la puntuacion del index */
 .Tarjeta{
     position: absolute;
-    right: 10px;
+    right: -1px;
     width: 45px;
     height: 43px;
 }
 
+@media screen and (orientation: landscape) {
+    main .Restaurantes {
+        display: flex;
+        flex-direction: row;
+        justify-content: nowrap;
+    }
+
+    .Restaurantes .TarjetaResto {
+        width: 410px;
+    }
+
+    main .TipoComida {
+        scrollbar-width: auto;
+    }
+
+}
+
+/* aca termina el index ------------------------------------------------------- */
+.ContainerimgX{
+    position: relative;
+    .Salir{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: #00DB9E;
+    }
+}
 .imgRestorants {
     height: 350px;
 }
