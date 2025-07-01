@@ -1,0 +1,67 @@
+:root {
+    --bg-primario: #ffffff;
+    --bg-secundario: rgb(64, 1, 94);
+    --txt-primario: #7c7c7c;
+    --txt-secundario: #000000;
+    --txt-terciario: #ffffff;
+    --bg-detalles-primario: #00DB9E;
+    --bg-detalles-secundario: rgb(188, 187, 192);
+    --arial: 'Arial', sans-serif;
+    --sombra: rgba(0, 0, 0, 0.2);
+    --sombra-chica: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    --sombra-grande: 0px 0px 20px rgba(0, 0, 0, 0.5);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--arial);
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background: var(--bg-secundario);
+    color: var(--txt-primario);
+}
+
+button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: var(--sombra);
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .Buscador{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6em;
+}
+
+main .AllFeatured{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6em;
+
+    .IconosSortFilt{
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+    }
+}
