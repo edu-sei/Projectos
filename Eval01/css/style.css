@@ -23,7 +23,7 @@
 body {
     min-height: 100vh;
     width: 100%;
-    background: var(--bg-secundario);
+    background: var(--bg-primario);
     color: var(--txt-primario);
 }
 
@@ -42,6 +42,7 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 1em;
 }
 
 main .Buscador{
@@ -63,5 +64,129 @@ main .AllFeatured{
         display: flex;
         flex-direction: row;
         gap: 1em;
+    }
+}
+
+main .Categorias {
+    width: 100%;
+    padding: 2em 1em 0.4em 1em;
+    display: flex;
+    gap: 1em;
+    overflow: auto hidden;
+    scrollbar-width: none;
+    gap: 1.5em;
+}
+
+.Categorias .IconoCategoria {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main .Anuncio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .ImgAnuncio{
+    position: relative;
+   
+}
+.ImgAnuncio .Texts{
+    color: #ffffff;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 1.5em;
+    button{
+        border:1px solid #ffffff;
+        border-radius: 6px;
+        height: 20px;
+        width: 100px;
+        color: #ffffff;
+        
+    }
+}
+
+main .DealOfTheDay{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    .Texto{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        
+    }
+    
+    button{
+        border:1px solid #ffffff;
+        border-radius: 6px;
+        height: 20px;
+        width: 100px;
+        color: #ffffff;
+        
+    }
+}
+
+main .ProductosVenta {
+    width: 100%;
+    padding: 2em 1em 0.4em 1em;
+    display: flex;
+    gap: 1em;
+    overflow: auto hidden;
+    scrollbar-width: none;
+    gap: 1.5em;
+}
+
+.ProductosVenta .Producto {
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+
+    img{
+        width: 170px;
+        border-radius: .4em;
+    }
+    .TextoProducto{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .Descuento{
+        display: flex;
+        gap: 10px;
+        .Tachado{
+            background-color: gray;
+            color: #d8d8d8;
+            border-radius: 20px;
+        }
+        .Off{
+            color: red;
+        }
+    }
+    .ContainerEstrella{
+        display: flex;
+        flex-direction: row;
+        padding: 5px;
+
+        .EstrellaA{
+            width: 18px;
+            height: 18px;
+        }
+
+    }   
+}
+
+main .SpecialOffers{
+    img{
+        width: 75px;
+        height: auto;
     }
 }
