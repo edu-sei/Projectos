@@ -1,112 +1,530 @@
 [{
   "restaurantes": [
-    {
-      "id_resto": "R001",
-      "nombre": "El Rincón del Sabor",
-      "tipo_comida": "Italiana",
-      "distancia_km": 2.5,
-      "horario": "12:00-15:00, 19:00-23:00",
-      "rating": 4,
-      "price": 2
-    },
-    {
-      "id_resto": "R002",
-      "nombre": "Sushi Lovers",
-      "tipo_comida": "Japonesa",
-      "distancia_km": 1.0,
-      "horario": "19:30-00:00",
-      "rating": 5,
-      "price": 3
-    },
-    {
-      "id_resto": "R003",
-      "nombre": "La Parrilla Gaucha",
-      "tipo_comida": "Argentina",
-      "distancia_km": 5.0,
-      "horario": "12:30-16:00, 20:00-01:00",
-      "rating": 4,
-      "price": 2
-    },
-    {
-      "id_resto": "R004",
-      "nombre": "Veggie Delight",
-      "tipo_comida": "Vegetariana",
-      "distancia_km": 3.2,
-      "horario": "11:00-22:00",
-      "rating": 3,
-      "price": 1
-    },
-    {
-      "id_resto": "R005",
-      "nombre": "Burger Haven",
-      "tipo_comida": "Americana",
-      "distancia_km": 0.8,
-      "horario": "12:00-23:00",
-      "rating": 4,
-      "price": 1
-    },
-    {
-      "id_resto": "R006",
-      "nombre": "Sabor Hindú",
-      "tipo_comida": "India",
-      "distancia_km": 4.5,
-      "horario": "19:00-23:00",
-      "rating": 5,
-      "price": 2
-    }
-  ]
+  {
+    "id_resto": "R001",
+    "nombre": "El Rincón del Sabor",
+    "tipo_comida": "Italiana",
+    "distancia_km": 2.5,
+    "horario": "12:00-15:00, 19:00-23:00",
+    "rating": 4,
+    "price": 2,
+    "img": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4"
+  },
+  {
+    "id_resto": "R002",
+    "nombre": "Sushi Lovers",
+    "tipo_comida": "Japonesa",
+    "distancia_km": 1.0,
+    "horario": "19:30-00:00",
+    "rating": 5,
+    "price": 3,
+    "img": "https://images.unsplash.com/photo-1546069901-eacef0df6022"
+  },
+  {
+    "id_resto": "R003",
+    "nombre": "La Parrilla Gaucha",
+    "tipo_comida": "Argentina",
+    "distancia_km": 5.0,
+    "horario": "12:30-16:00, 20:00-01:00",
+    "rating": 4,
+    "price": 2,
+    "img": "https://images.unsplash.com/photo-1606788075761-19b8f19f83ec"
+  },
+  {
+    "id_resto": "R004",
+    "nombre": "Veggie Delight",
+    "tipo_comida": "Vegetariana",
+    "distancia_km": 3.2,
+    "horario": "11:00-22:00",
+    "rating": 3,
+    "price": 1,
+    "img": "https://images.unsplash.com/photo-1506084868230-bb9d95c24759"
+  },
+  {
+    "id_resto": "R005",
+    "nombre": "Burger Haven",
+    "tipo_comida": "Americana",
+    "distancia_km": 0.8,
+    "horario": "12:00-23:00",
+    "rating": 4,
+    "price": 1,
+    "img": "https://images.unsplash.com/photo-1550547660-d9450f859349"
+  },
+  {
+    "id_resto": "R006",
+    "nombre": "Sabor Hindú",
+    "tipo_comida": "India",
+    "distancia_km": 4.5,
+    "horario": "19:00-23:00",
+    "rating": 5,
+    "price": 2,
+    "img": "https://images.unsplash.com/photo-1622866707443-8593d2fc15b1"
+  },
+  {
+    "id_resto": "R007",
+    "nombre": "Taco Fiesta",
+    "tipo_comida": "Mexicana",
+    "distancia_km": 2.0,
+    "horario": "13:00-23:00",
+    "rating": 4,
+    "price": 1,
+    "img": "https://images.unsplash.com/photo-1601925261325-3ec4c39c9c9b"
+  },
+  {
+    "id_resto": "R008",
+    "nombre": "Le Petit Bistro",
+    "tipo_comida": "Francesa",
+    "distancia_km": 3.5,
+    "horario": "12:00-15:00, 19:30-23:30",
+    "rating": 5,
+    "price": 3,
+    "img": "https://images.unsplash.com/photo-1600891964599-f61ba0e24092"
+  },
+  {
+    "id_resto": "R009",
+    "nombre": "Wok Express",
+    "tipo_comida": "China",
+    "distancia_km": 1.8,
+    "horario": "11:30-22:30",
+    "rating": 4,
+    "price": 1,
+    "img": "https://images.unsplash.com/photo-1586190848861-99aa4a171e90"
+  },
+  {
+    "id_resto": "R010",
+    "nombre": "El Mar de Sabores",
+    "tipo_comida": "Mariscos",
+    "distancia_km": 4.0,
+    "horario": "12:00-16:00, 20:00-00:00",
+    "rating": 4,
+    "price": 3,
+    "img": "https://images.unsplash.com/photo-1570197788417-51343cdd1f0e"
+  },
+  {
+    "id_resto": "R011",
+    "nombre": "Pan y Queso",
+    "tipo_comida": "Café & Sandwiches",
+    "distancia_km": 0.6,
+    "horario": "08:00-20:00",
+    "rating": 3,
+    "price": 1,
+    "img": "https://images.unsplash.com/photo-1550317138-10000687a72b"
+  },
+  {
+    "id_resto": "R012",
+    "nombre": "Fusión Nikkei",
+    "tipo_comida": "Peruano-Japonés",
+    "distancia_km": 5.2,
+    "horario": "13:00-16:00, 20:00-00:00",
+    "rating": 5,
+    "price": 3,
+    "img": "https://images.unsplash.com/photo-1642335166247-b0c774df2ab1"
+  },
+  {
+    "id_resto": "R013",
+    "nombre": "Mediterránea",
+    "tipo_comida": "Mediterránea",
+    "distancia_km": 3.0,
+    "horario": "12:00-15:00, 19:00-23:00",
+    "rating": 4,
+    "price": 2,
+    "img": "https://images.unsplash.com/photo-1576866209830-6ec073ff255d"
+  },
+  {
+    "id_resto": "R014",
+    "nombre": "Casa Árabe",
+    "tipo_comida": "Árabe",
+    "distancia_km": 2.7,
+    "horario": "13:00-00:00",
+    "rating": 5,
+    "price": 2,
+    "img": "https://images.unsplash.com/photo-1589308078055-386e8491c2a7"
+  },
+  {
+    "id_resto": "R015",
+    "nombre": "Ramen House",
+    "tipo_comida": "Japonesa",
+    "distancia_km": 1.1,
+    "horario": "12:00-23:00",
+    "rating": 4,
+    "price": 2,
+    "img": "https://images.unsplash.com/photo-1603572749535-dfdb9d31d5bb"
+  },
+  {
+    "id_resto": "R016",
+    "nombre": "Brasa & Vino",
+    "tipo_comida": "Parrilla & Vinos",
+    "distancia_km": 6.0,
+    "horario": "13:00-17:00, 20:00-01:00",
+    "rating": 5,
+    "price": 3,
+    "img": "https://images.unsplash.com/photo-1613145991269-f4ab49a6c526"
+  },
+  {
+    "id_resto": "R017",
+    "nombre": "The Vegan Spot",
+    "tipo_comida": "Vegana",
+    "distancia_km": 2.3,
+    "horario": "10:00-22:00",
+    "rating": 4,
+    "price": 2,
+    "img": "https://images.unsplash.com/photo-1603391450902-b39e94a4f3ec"
+  },
+  {
+    "id_resto": "R018",
+    "nombre": "Pizza Mía",
+    "tipo_comida": "Pizzería",
+    "distancia_km": 0.9,
+    "horario": "12:00-00:00",
+    "rating": 3,
+    "price": 1,
+    "img": "https://images.unsplash.com/photo-1594007654729-407eedc4be9b"
+  },
+  {
+    "id_resto": "R019",
+    "nombre": "Corean BBQ",
+    "tipo_comida": "Coreana",
+    "distancia_km": 4.8,
+    "horario": "17:00-00:00",
+    "rating": 5,
+    "price": 3,
+    "img": "https://images.unsplash.com/photo-1608219959300-3cd7f5ad45a1"
+  },
+  {
+    "id_resto": "R020",
+    "nombre": "El Patio Español",
+    "tipo_comida": "Española",
+    "distancia_km": 3.7,
+    "horario": "13:00-15:30, 20:00-23:30",
+    "rating": 4,
+    "price": 2,
+    "img": "https://images.unsplash.com/photo-1604908177879-fb3e674d5c4b"
+  }
+]
 },
 {
   "platos": [
-    {
-      "id_resto": "R001",
-      "nombrePlato": "Lasaña Boloñesa",
-      "ingredientes": ["Carne picada", "Salsa de tomate", "Pasta", "Queso"],
-      "descripcion": "Clásica lasaña casera con capas de pasta, abundante salsa boloñesa y gratinado de queso.",
-      "precioPlato": 15.50,
-      "urlImg": "https://example.com/lasana.jpg"
-    },
-    {
-      "id_resto": "R001",
-      "nombrePlato": "Pizza Margarita",
-      "ingredientes": ["Masa", "Tomate", "Mozzarella", "Albahaca"],
-      "descripcion": "Pizza tradicional con base de tomate, mozzarella fresca y hojas de albahaca.",
-      "precioPlato": 12.00,
-      "urlImg": "https://example.com/pizza_margarita.jpg"
-    },
-    {
-      "id_resto": "R002",
-      "nombrePlato": "Combinado de Sushi Premium",
-      "ingredientes": ["Salmón", "Atún", "Arroz", "Algas nori", "Aguacate"],
-      "descripcion": "Variedad de nigiri, sashimi y rolls con los pescados más frescos del día.",
-      "precioPlato": 28.00,
-      "urlImg": "img/sushi.jpg"
-    },
-    {
-      "id_resto": "R003",
-      "nombrePlato": "Bife de Chorizo",
-      "ingredientes": ["Carne de res", "Sal"],
-      "descripcion": "Jugoso corte de bife de chorizo a la parrilla, acompañado de papas fritas.",
-      "precioPlato": 22.00,
-      "urlImg": "https://example.com/bife_chorizo.jpg"
-    },
-    {
-      "id_resto": "R004",
-      "nombrePlato": "Bowl Buddha",
-      "ingredientes": ["Quinoa", "Garbanzos", "Vegetales asados", "Aderezo de tahini"],
-      "descripcion": "Bowl nutritivo y completo con base de quinoa, vegetales de estación y garbanzos.",
-      "precioPlato": 14.00,
-      "urlImg": "https://example.com/buddha_bowl.jpg"
-    },
-    {
-      "id_resto": "R005",
-      "nombrePlato": "Hamburguesa Clásica",
-      "ingredientes": ["Pan de brioche", "Carne de res", "Lechuga", "Tomate", "Cebolla", "Queso", "Salsa especial"],
-      "descripcion": "La clásica hamburguesa con todos los ingredientes frescos y nuestra salsa secreta.",
-      "precioPlato": 10.50,
-      "urlImg": "https://example.com/burger_clasica.jpg"
-    }
-  ]
+  {
+    "id_resto": "R001",
+    "nombrePlato": "Lasaña Boloñesa",
+    "ingredientes": ["Carne picada", "Salsa de tomate", "Pasta", "Queso"],
+    "descripcion": "Clásica lasaña casera con capas de pasta, abundante salsa boloñesa y gratinado de queso.",
+    "precioPlato": 15.50,
+    "urlImg": "https://example.com/lasana.jpg"
+  },
+  {
+    "id_resto": "R001",
+    "nombrePlato": "Fettuccine Alfredo",
+    "ingredientes": ["Pasta", "Crema", "Queso parmesano", "Manteca"],
+    "descripcion": "Fideos con salsa cremosa de queso parmesano y manteca.",
+    "precioPlato": 14.00,
+    "urlImg": "https://example.com/fettuccine.jpg"
+  },
+  {
+    "id_resto": "R002",
+    "nombrePlato": "Combinado de Sushi Premium",
+    "ingredientes": ["Salmón", "Atún", "Arroz", "Algas nori", "Aguacate"],
+    "descripcion": "Variedad de nigiri, sashimi y rolls con los pescados más frescos del día.",
+    "precioPlato": 28.00,
+    "urlImg": "img/sushi.jpg"
+  },
+  {
+    "id_resto": "R002",
+    "nombrePlato": "Tempura de Langostinos",
+    "ingredientes": ["Langostinos", "Harina", "Salsa tentsuyu"],
+    "descripcion": "Langostinos crujientes fritos en tempura, acompañados con salsa tradicional.",
+    "precioPlato": 18.50,
+    "urlImg": "https://example.com/tempura.jpg"
+  },
+  {
+    "id_resto": "R003",
+    "nombrePlato": "Bife de Chorizo",
+    "ingredientes": ["Carne de res", "Sal"],
+    "descripcion": "Jugoso corte de bife de chorizo a la parrilla, acompañado de papas fritas.",
+    "precioPlato": 22.00,
+    "urlImg": "https://example.com/bife_chorizo.jpg"
+  },
+  {
+    "id_resto": "R003",
+    "nombrePlato": "Provoleta",
+    "ingredientes": ["Queso provolone", "Orégano", "Aceite de oliva"],
+    "descripcion": "Queso derretido a la parrilla con especias, ideal como entrada.",
+    "precioPlato": 8.50,
+    "urlImg": "https://example.com/provoleta.jpg"
+  },
+  {
+    "id_resto": "R004",
+    "nombrePlato": "Bowl Buddha",
+    "ingredientes": ["Quinoa", "Garbanzos", "Vegetales asados", "Aderezo de tahini"],
+    "descripcion": "Bowl nutritivo y completo con base de quinoa, vegetales de estación y garbanzos.",
+    "precioPlato": 14.00,
+    "urlImg": "https://example.com/buddha_bowl.jpg"
+  },
+  {
+    "id_resto": "R004",
+    "nombrePlato": "Ensalada de Kale",
+    "ingredientes": ["Kale", "Nueces", "Arándanos", "Vinagreta de mostaza"],
+    "descripcion": "Refrescante ensalada verde con frutos secos y vinagreta casera.",
+    "precioPlato": 11.00,
+    "urlImg": "https://example.com/ensalada_kale.jpg"
+  },
+  {
+    "id_resto": "R005",
+    "nombrePlato": "Hamburguesa Clásica",
+    "ingredientes": ["Pan de brioche", "Carne de res", "Lechuga", "Tomate", "Cebolla", "Queso", "Salsa especial"],
+    "descripcion": "La clásica hamburguesa con todos los ingredientes frescos y nuestra salsa secreta.",
+    "precioPlato": 10.50,
+    "urlImg": "https://example.com/burger_clasica.jpg"
+  },
+  {
+    "id_resto": "R005",
+    "nombrePlato": "Papas con Cheddar y Bacon",
+    "ingredientes": ["Papas fritas", "Queso cheddar", "Panceta"],
+    "descripcion": "Papas crujientes cubiertas con cheddar derretido y panceta crocante.",
+    "precioPlato": 7.50,
+    "urlImg": "https://example.com/papas_cheddar.jpg"
+  },
+  {
+    "id_resto": "R006",
+    "nombrePlato": "Pollo Tikka Masala",
+    "ingredientes": ["Pollo", "Yogur", "Tomate", "Especias indias"],
+    "descripcion": "Pollo marinado en yogur y especias, cocido en cremosa salsa de tomate.",
+    "precioPlato": 16.00,
+    "urlImg": "https://example.com/tikka_masala.jpg"
+  },
+  {
+    "id_resto": "R006",
+    "nombrePlato": "Naan con Ajo",
+    "ingredientes": ["Harina", "Ajo", "Manteca", "Levadura"],
+    "descripcion": "Pan indio tierno y aromático, ideal para acompañar curries.",
+    "precioPlato": 5.00,
+    "urlImg": "https://example.com/naan.jpg"
+  },
+  {
+    "id_resto": "R007",
+    "nombrePlato": "Tacos al Pastor",
+    "ingredientes": ["Cerdo", "Piña", "Cilantro", "Cebolla", "Tortilla de maíz"],
+    "descripcion": "Tacos tradicionales mexicanos con carne al pastor y piña asada.",
+    "precioPlato": 9.00,
+    "urlImg": "https://example.com/tacos_al_pastor.jpg"
+  },
+  {
+    "id_resto": "R007",
+    "nombrePlato": "Nachos con Guacamole",
+    "ingredientes": ["Totopos", "Guacamole", "Queso fundido", "Salsa pico de gallo"],
+    "descripcion": "Nachos crujientes con guacamole casero y queso derretido.",
+    "precioPlato": 8.00,
+    "urlImg": "https://example.com/nachos.jpg"
+  },
+  {
+    "id_resto": "R008",
+    "nombrePlato": "Ratatouille",
+    "ingredientes": ["Berenjena", "Zucchini", "Pimiento", "Tomate", "Hierbas"],
+    "descripcion": "Estofado de vegetales al estilo francés, cocinado lentamente con hierbas de la Provenza.",
+    "precioPlato": 13.00,
+    "urlImg": "https://example.com/ratatouille.jpg"
+  },
+  {
+    "id_resto": "R008",
+    "nombrePlato": "Crepes de Champiñones",
+    "ingredientes": ["Crepes", "Champiñones", "Crema", "Queso"],
+    "descripcion": "Crepes rellenos de champiñones y salsa cremosa.",
+    "precioPlato": 12.50,
+    "urlImg": "https://example.com/crepes.jpg"
+  },
+  {
+    "id_resto": "R009",
+    "nombrePlato": "Pollo Agridulce",
+    "ingredientes": ["Pollo", "Piña", "Pimiento", "Salsa agridulce"],
+    "descripcion": "Crujientes trozos de pollo bañados en salsa agridulce y acompañados con arroz.",
+    "precioPlato": 11.50,
+    "urlImg": "https://example.com/pollo_agridulce.jpg"
+  },
+  {
+    "id_resto": "R009",
+    "nombrePlato": "Chow Mein de Verduras",
+    "ingredientes": ["Fideos", "Zanahoria", "Repollo", "Salsa de soja"],
+    "descripcion": "Fideos salteados al wok con vegetales y salsa asiática.",
+    "precioPlato": 10.00,
+    "urlImg": "https://example.com/chow_mein.jpg"
+  },
+  {
+    "id_resto": "R010",
+    "nombrePlato": "Paella de Mariscos",
+    "ingredientes": ["Arroz", "Mejillones", "Langostinos", "Calamar", "Azafrán"],
+    "descripcion": "Tradicional paella española cocinada con frutos del mar y especias.",
+    "precioPlato": 20.00,
+    "urlImg": "https://example.com/paella.jpg"
+  },
+  {
+    "id_resto": "R010",
+    "nombrePlato": "Pulpo a la Gallega",
+    "ingredientes": ["Pulpo", "Papas", "Pimentón", "Aceite de oliva"],
+    "descripcion": "Pulpo tierno servido sobre papas con pimentón dulce.",
+    "precioPlato": 18.00,
+    "urlImg": "https://example.com/pulpo.jpg"
+  },
+  {
+    "id_resto": "R011",
+    "nombrePlato": "Tostado de Jamón y Queso",
+    "ingredientes": ["Pan", "Jamón", "Queso", "Manteca"],
+    "descripcion": "Tostado clásico y crocante, perfecto para acompañar un café.",
+    "precioPlato": 5.50,
+    "urlImg": "https://example.com/tostado.jpg"
+  },
+  {
+    "id_resto": "R011",
+    "nombrePlato": "Café con Leche y Medialunas",
+    "ingredientes": ["Café", "Leche", "Medialunas"],
+    "descripcion": "Desayuno tradicional con café con leche y dos medialunas recién horneadas.",
+    "precioPlato": 4.00,
+    "urlImg": "https://example.com/cafe_medialunas.jpg"
+  },
+  {
+    "id_resto": "R012",
+    "nombrePlato": "Ceviche Nikkei",
+    "ingredientes": ["Pescado blanco", "Lima", "Soja", "Jengibre", "Cilantro"],
+    "descripcion": "Fusión peruano-japonesa con pescado fresco marinado y toques orientales.",
+    "precioPlato": 18.00,
+    "urlImg": "https://example.com/ceviche_nikkei.jpg"
+  },
+  {
+    "id_resto": "R012",
+    "nombrePlato": "Roll Acevichado",
+    "ingredientes": ["Arroz", "Camarón", "Palta", "Ceviche"],
+    "descripcion": "Roll relleno de camarón con topping de ceviche peruano y leche de tigre.",
+    "precioPlato": 19.00,
+    "urlImg": "https://example.com/roll_acevichado.jpg"
+  },
+  {
+    "id_resto": "R013",
+    "nombrePlato": "Ensalada Griega",
+    "ingredientes": ["Tomate", "Pepino", "Aceitunas", "Queso feta", "Orégano"],
+    "descripcion": "Refrescante y saludable, con ingredientes frescos del Mediterráneo.",
+    "precioPlato": 10.00,
+    "urlImg": "https://example.com/ensalada_griega.jpg"
+  },
+  {
+    "id_resto": "R013",
+    "nombrePlato": "Pasta al Pesto Mediterráneo",
+    "ingredientes": ["Pasta", "Albahaca", "Aceitunas", "Tomate seco"],
+    "descripcion": "Pasta con salsa pesto, aceitunas negras y tomates secos.",
+    "precioPlato": 13.50,
+    "urlImg": "https://example.com/pasta_mediterranea.jpg"
+  },
+  {
+    "id_resto": "R014",
+    "nombrePlato": "Shawarma de Cordero",
+    "ingredientes": ["Cordero", "Pan pita", "Yogur", "Vegetales"],
+    "descripcion": "Roll de pan pita relleno con cordero especiado y vegetales frescos.",
+    "precioPlato": 12.50,
+    "urlImg": "https://example.com/shawarma.jpg"
+  },
+  {
+    "id_resto": "R014",
+    "nombrePlato": "Falafel con Hummus",
+    "ingredientes": ["Garbanzos", "Ajo", "Perejil", "Hummus"],
+    "descripcion": "Croquetas crujientes de garbanzo acompañadas con hummus casero.",
+    "precioPlato": 9.00,
+    "urlImg": "https://example.com/falafel.jpg"
+  },
+  {
+    "id_resto": "R015",
+    "nombrePlato": "Ramen Tonkotsu",
+    "ingredientes": ["Caldo de cerdo", "Fideos", "Huevo", "Chashu", "Cebolla"],
+    "descripcion": "Delicioso ramen con caldo espeso, cerdo cocido a fuego lento y huevo marinado.",
+    "precioPlato": 14.00,
+    "urlImg": "https://example.com/ramen_tonkotsu.jpg"
+  },
+  {
+    "id_resto": "R015",
+    "nombrePlato": "Gyozas de Cerdo",
+    "ingredientes": ["Masa", "Carne de cerdo", "Cebolla", "Salsa de soja"],
+    "descripcion": "Empanaditas japonesas al vapor y doradas, rellenas de cerdo.",
+    "precioPlato": 7.00,
+    "urlImg": "https://example.com/gyozas.jpg"
+  },
+  {
+    "id_resto": "R016",
+    "nombrePlato": "Costillas a la Brasa",
+    "ingredientes": ["Costillas de cerdo", "Barbacoa", "Papas"],
+    "descripcion": "Costillas jugosas cocidas lentamente con salsa barbacoa, acompañadas de papas rústicas.",
+    "precioPlato": 19.50,
+    "urlImg": "https://example.com/costillas.jpg"
+  },
+  {
+    "id_resto": "R016",
+    "nombrePlato": "Tabla de Fiambres y Vinos",
+    "ingredientes": ["Salame", "Quesos", "Pan de campo", "Vino tinto"],
+    "descripcion": "Tabla gourmet con variedad de fiambres, quesos y una copa de vino a elección.",
+    "precioPlato": 17.00,
+    "urlImg": "https://example.com/tabla.jpg"
+  },
+  {
+    "id_resto": "R017",
+    "nombrePlato": "Wrap Vegano",
+    "ingredientes": ["Tortilla integral", "Tofu", "Verduras", "Hummus"],
+    "descripcion": "Wrap liviano y saludable con ingredientes 100% vegetales.",
+    "precioPlato": 9.50,
+    "urlImg": "https://example.com/wrap_vegano.jpg"
+  },
+  {
+    "id_resto": "R017",
+    "nombrePlato": "Tarta de Espinaca Vegana",
+    "ingredientes": ["Masa vegana", "Espinaca", "Tofu", "Cebolla caramelizada"],
+    "descripcion": "Tarta vegana con relleno suave y masa sin productos animales.",
+    "precioPlato": 8.00,
+    "urlImg": "https://example.com/tarta_vegana.jpg"
+  },
+  {
+    "id_resto": "R018",
+    "nombrePlato": "Pizza Cuatro Quesos",
+    "ingredientes": ["Mozzarella", "Roquefort", "Parmesano", "Fontina"],
+    "descripcion": "Pizza cremosa y potente, ideal para los fanáticos del queso.",
+    "precioPlato": 13.00,
+    "urlImg": "https://example.com/cuatro_quesos.jpg"
+  },
+  {
+    "id_resto": "R018",
+    "nombrePlato": "Fugazzeta",
+    "ingredientes": ["Cebolla", "Mozzarella", "Aceite de oliva", "Orégano"],
+    "descripcion": "Clásica pizza argentina rellena de queso y cubierta de cebolla.",
+    "precioPlato": 11.00,
+    "urlImg": "https://example.com/fugazzeta.jpg"
+  },
+  {
+    "id_resto": "R019",
+    "nombrePlato": "Costillas Coreanas",
+    "ingredientes": ["Costillas", "Salsa Gochujang", "Ajo", "Sésamo"],
+    "descripcion": "Costillas marinadas al estilo coreano, con sabor picante y dulce.",
+    "precioPlato": 17.00,
+    "urlImg": "https://example.com/corean_bbq.jpg"
+  },
+  {
+    "id_resto": "R019",
+    "nombrePlato": "Bibimbap",
+    "ingredientes": ["Arroz", "Verduras", "Huevo", "Salsa picante"],
+    "descripcion": "Plato coreano tradicional con arroz, vegetales salteados y huevo.",
+    "precioPlato": 14.00,
+    "urlImg": "https://example.com/bibimbap.jpg"
+  },
+  {
+    "id_resto": "R020",
+    "nombrePlato": "Tortilla Española",
+    "ingredientes": ["Papas", "Huevos", "Cebolla", "Aceite de oliva"],
+    "descripcion": "Tortilla jugosa y sabrosa, típica de la cocina casera española.",
+    "precioPlato": 8.00,
+    "urlImg": "https://example.com/tortilla_espanola.jpg"
+  },
+  {
+    "id_resto": "R020",
+    "nombrePlato": "Croquetas de Jamón",
+    "ingredientes": ["Jamón", "Bechamel", "Pan rallado", "Huevo"],
+    "descripcion": "Crujientes por fuera, cremosas por dentro. Un clásico español.",
+    "precioPlato": 9.50,
+    "urlImg": "https://example.com/croquetas.jpg"
+  }
+]
 },
 
 {
