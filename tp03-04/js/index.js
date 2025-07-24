@@ -1,4 +1,4 @@
-const DataResto = './js/dataResto.json';
+const DataResto = './dataResto.json';
 
 const AllRestaurante = async () => {
     try {
