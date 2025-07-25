@@ -6,7 +6,7 @@
     "tipo_comida": "Italiana",
     "distancia_km": 2.5,
     "horario": "12:00-15:00, 19:00-23:00",
-    "rating": 4,
+    "rating": 4.2,
     "price": 2,
     "img": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4"
   },
@@ -16,7 +16,7 @@
     "tipo_comida": "Japonesa",
     "distancia_km": 1.0,
     "horario": "19:30-00:00",
-    "rating": 5,
+    "rating": 4.9,
     "price": 3,
     "img": "https://images.unsplash.com/photo-1546069901-eacef0df6022"
   },
@@ -26,7 +26,7 @@
     "tipo_comida": "Argentina",
     "distancia_km": 5.0,
     "horario": "12:30-16:00, 20:00-01:00",
-    "rating": 4,
+    "rating": 4.5,
     "price": 2,
     "img": "https://images.unsplash.com/photo-1606788075761-19b8f19f83ec"
   },
@@ -36,7 +36,7 @@
     "tipo_comida": "Vegetariana",
     "distancia_km": 3.2,
     "horario": "11:00-22:00",
-    "rating": 3,
+    "rating": 3.4,
     "price": 1,
     "img": "https://images.unsplash.com/photo-1506084868230-bb9d95c24759"
   },
@@ -46,7 +46,7 @@
     "tipo_comida": "Americana",
     "distancia_km": 0.8,
     "horario": "12:00-23:00",
-    "rating": 4,
+    "rating": 4.3,
     "price": 1,
     "img": "https://images.unsplash.com/photo-1550547660-d9450f859349"
   },
@@ -56,7 +56,7 @@
     "tipo_comida": "India",
     "distancia_km": 4.5,
     "horario": "19:00-23:00",
-    "rating": 5,
+    "rating": 4.8,
     "price": 2,
     "img": "https://images.unsplash.com/photo-1622866707443-8593d2fc15b1"
   },
@@ -66,7 +66,7 @@
     "tipo_comida": "Mexicana",
     "distancia_km": 2.0,
     "horario": "13:00-23:00",
-    "rating": 4,
+    "rating": 4.1,
     "price": 1,
     "img": "https://images.unsplash.com/photo-1601925261325-3ec4c39c9c9b"
   },
@@ -76,7 +76,7 @@
     "tipo_comida": "Francesa",
     "distancia_km": 3.5,
     "horario": "12:00-15:00, 19:30-23:30",
-    "rating": 5,
+    "rating": 4.9,
     "price": 3,
     "img": "https://images.unsplash.com/photo-1600891964599-f61ba0e24092"
   },
@@ -86,7 +86,7 @@
     "tipo_comida": "China",
     "distancia_km": 1.8,
     "horario": "11:30-22:30",
-    "rating": 4,
+    "rating": 4.0,
     "price": 1,
     "img": "https://images.unsplash.com/photo-1586190848861-99aa4a171e90"
   },
@@ -96,7 +96,7 @@
     "tipo_comida": "Mariscos",
     "distancia_km": 4.0,
     "horario": "12:00-16:00, 20:00-00:00",
-    "rating": 4,
+    "rating": 4.6,
     "price": 3,
     "img": "https://images.unsplash.com/photo-1570197788417-51343cdd1f0e"
   },
@@ -106,7 +106,7 @@
     "tipo_comida": "Café & Sandwiches",
     "distancia_km": 0.6,
     "horario": "08:00-20:00",
-    "rating": 3,
+    "rating": 3.3,
     "price": 1,
     "img": "https://images.unsplash.com/photo-1550317138-10000687a72b"
   },
@@ -116,7 +116,7 @@
     "tipo_comida": "Peruano-Japonés",
     "distancia_km": 5.2,
     "horario": "13:00-16:00, 20:00-00:00",
-    "rating": 5,
+    "rating": 4.9,
     "price": 3,
     "img": "https://images.unsplash.com/photo-1642335166247-b0c774df2ab1"
   },
@@ -126,7 +126,7 @@
     "tipo_comida": "Mediterránea",
     "distancia_km": 3.0,
     "horario": "12:00-15:00, 19:00-23:00",
-    "rating": 4,
+    "rating": 4.4,
     "price": 2,
     "img": "https://images.unsplash.com/photo-1576866209830-6ec073ff255d"
   },
@@ -136,7 +136,7 @@
     "tipo_comida": "Árabe",
     "distancia_km": 2.7,
     "horario": "13:00-00:00",
-    "rating": 5,
+    "rating": 4.7,
     "price": 2,
     "img": "https://images.unsplash.com/photo-1589308078055-386e8491c2a7"
   },
@@ -146,7 +146,7 @@
     "tipo_comida": "Japonesa",
     "distancia_km": 1.1,
     "horario": "12:00-23:00",
-    "rating": 4,
+    "rating": 4.3,
     "price": 2,
     "img": "https://images.unsplash.com/photo-1603572749535-dfdb9d31d5bb"
   },
@@ -156,7 +156,7 @@
     "tipo_comida": "Parrilla & Vinos",
     "distancia_km": 6.0,
     "horario": "13:00-17:00, 20:00-01:00",
-    "rating": 5,
+    "rating": 4.8,
     "price": 3,
     "img": "https://images.unsplash.com/photo-1613145991269-f4ab49a6c526"
   },
@@ -166,7 +166,7 @@
     "tipo_comida": "Vegana",
     "distancia_km": 2.3,
     "horario": "10:00-22:00",
-    "rating": 4,
+    "rating": 4.0,
     "price": 2,
     "img": "https://images.unsplash.com/photo-1603391450902-b39e94a4f3ec"
   },
@@ -176,7 +176,7 @@
     "tipo_comida": "Pizzería",
     "distancia_km": 0.9,
     "horario": "12:00-00:00",
-    "rating": 3,
+    "rating": 3.8,
     "price": 1,
     "img": "https://images.unsplash.com/photo-1594007654729-407eedc4be9b"
   },
@@ -186,7 +186,7 @@
     "tipo_comida": "Coreana",
     "distancia_km": 4.8,
     "horario": "17:00-00:00",
-    "rating": 5,
+    "rating": 4.9,
     "price": 3,
     "img": "https://images.unsplash.com/photo-1608219959300-3cd7f5ad45a1"
   },
@@ -196,7 +196,7 @@
     "tipo_comida": "Española",
     "distancia_km": 3.7,
     "horario": "13:00-15:30, 20:00-23:30",
-    "rating": 4,
+    "rating": 4.6,
     "price": 2,
     "img": "https://images.unsplash.com/photo-1604908177879-fb3e674d5c4b"
   }

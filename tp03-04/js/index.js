@@ -1,12 +1,13 @@
-const DataResto = './dataResto.json';
+const DataResto = './js/dataResto.json';
 
 const AllRestaurante = async () => {
     try {
         const contenedor = document.getElementById('Restaurantes');
         const Res = await fetch(DataResto);
-        const restaurantes = await Res.json(); 
 
-        restaurantes.forEach((resto) => {
+        const Datos = await Res.json(); 
+        Datos[0].restaurantes.forEach((resto) => {
+
             const article = document.createElement('article');
             article.classList.add('TarjetaResto');
 
@@ -63,10 +64,10 @@ function getStarsSVG(rating) {
     let svg = '';
 
     for (let i = 0; i < fullStars; i++) {
-        svg += '<svg width="20" height="20" fill="#00EFAC"><polygon points="10,1 13,7 20,7 15,12 17,19 10,15 3,19 5,12 0,7 7,7"/></svg>';
+        svg += '<svg width="20" height="20" class="ColorRatingOn" fill="currentColor"><polygon points="10,1 13,7 20,7 15,12 17,19 10,15 3,19 5,12 0,7 7,7"/></svg>';
     }
     for (let i = 0; i < emptyStars; i++) {
-        svg += '<svg width="20" height="20" fill="#BCBBC0"><polygon points="10,1 13,7 20,7 15,12 17,19 10,15 3,19 5,12 0,7 7,7"/></svg>';
+        svg += '<svg width="20" height="20" class="ColorRatingOff" fill="currentColor"><polygon points="10,1 13,7 20,7 15,12 17,19 10,15 3,19 5,12 0,7 7,7"/></svg>';
     }
 
     return svg;
@@ -75,12 +76,46 @@ function getStarsSVG(rating) {
 function getDollarsSVG(price) {
     let svg = '';
     for (let i = 0; i < price; i++) {
-        svg += '<svg width="10" height="20" fill="#00EFAC"><text x="0" y="15" font-size="18">$</text></svg>';
+        svg += '<svg width="10" height="20" class="ColorRatingOn" fill="currentColor"><text x="0" y="15" font-size="18">$</text></svg>';
     }
     for (let i = price; i < 3; i++) {
-        svg += '<svg width="10" height="20" fill="#BCBBC0"><text x="0" y="15" font-size="18">$</text></svg>';
+        svg += '<svg width="10" height="20" class="ColorRatingOff" fill="currentColor"><text x="0" y="15" font-size="18">$</text></svg>';
     }
     return svg;
 }
 
-document.addEventListener("DOMContentLoaded", AllRestaurante);
+const CategoriasGenerales = async () => {
+    try {
+        const contenedor = document.getElementById('TipoComida');
+        const Res = await fetch(DataResto);
+
+        const Datos = await Res.json(); 
+        console.log(Datos);
+        Datos[2].categorias_generales.forEach((catego) => {
+            console.log(catego);
+
+            const DivIco = document.createElement('div');
+            DivIco.classList.add('IconoComida');
+
+            const Button = document.createElement('button');
+
+            const Icono = document.createElement('i');
+            Icono.classList.add('fas', catego.icono);
+
+            const Texto = document.createElement('span');
+            Texto.textContent = catego.nombreCat;
+
+            Button.appendChild(Icono);
+            Button.appendChild(Texto);
+            DivIco.appendChild(Button);
+            contenedor.appendChild(DivIco);
+        });
+    } catch (err) {
+        console.error(err);
+    }
+}
+
+
+
+AllRestaurante();
+CategoriasGenerales();
